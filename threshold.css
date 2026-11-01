@@ -1,0 +1,19 @@
+.threshold-mark {
+  margin-top: 10vh;
+  min-height: 150px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: auto 1fr auto 1fr auto;
+  gap: 24px;
+  align-items: center;
+  padding: 28px 3vw;
+  font: 300 clamp(20px, 3vw, 42px) var(--mono);
+  letter-spacing: .08em;
+}
+.threshold-mark i {height:1px;background:linear-gradient(90deg,transparent,var(--copper),transparent);position:relative}
+.threshold-mark i::after {content:"";position:absolute;width:5px;height:5px;border:1px solid var(--copper);border-radius:50%;left:50%;top:-3px;box-shadow:0 0 14px var(--copper)}
+.threshold-mark b {font-size:10px;letter-spacing:.25em;color:#8c908d;text-align:center}
+.threshold-mark span:last-of-type {color:var(--violet)}
+.threshold-mark small {grid-column:1/-1;text-align:center;font:400 7px var(--mono);letter-spacing:.18em;color:#555}
+@media(max-width:800px){.threshold-mark{grid-template-columns:auto 1fr auto;gap:12px}.threshold-mark i:nth-of-type(2),.threshold-mark span:last-of-type{display:none}}

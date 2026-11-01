@@ -1,0 +1,9 @@
+.message-helper{border:1px solid var(--line);padding:20px;display:grid;gap:14px}
+.contact .ghost{background:transparent}
+.contact .form-note{font-size:11px;line-height:1.7;color:#a4a8a5;margin:0}
+.contact .contact-consent{display:flex;align-items:flex-start;gap:12px;text-transform:none;letter-spacing:0;font:300 12px/1.7 var(--sans);color:#a4a8a5}
+.contact-consent input[type=checkbox]{width:18px;height:18px;margin:2px 0 0;flex-shrink:0;accent-color:var(--copper)}
+.contact button{max-width:100%;white-space:normal}
+.contact textarea{resize:vertical;min-height:160px}
+.contact button:focus-visible,.contact input:focus-visible{outline:2px solid var(--copper);outline-offset:4px}
+#form-status:empty{display:none}
