@@ -16,4 +16,10 @@ The message helper uses browser-local templates; no AI service or API key is nee
 
 ## Updates
 
+## Inquiry retention
+
+Retain inquiries for six months after the last contact, then delete them from the authenticated Netlify Forms dashboard and any operational copies. For unanswered inquiries, use the submission date. Keep the date of subsequent contact in a private operational record, never in this repository. This is an owner-managed retention policy; the site code does not implement automatic deletion or track replies. Review records regularly and delete those reaching their retention date. Do not export customer submissions into this repository or the public site.
+
+## Updates
+
 Edit the source files, run `node --check script.js` and `node build-site.mjs`, then commit and push to `main`. Once Netlify is linked, pushes trigger deployment. Generated `dist/` files are not committed.
